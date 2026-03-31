@@ -12,8 +12,10 @@ node_modules/
 Thumbs.db
 desktop.ini
 
-# Claude Code local files
+# Claude Code local files (exceto skills que precisam ser compartilhadas)
 .claude/
+!.claude/skills/
+!.claude/skills/**
 
 # MCPs externos (não fazem parte do opensquad)
 dashboard/
@@ -28,7 +30,6 @@ output/
 tasks/
 .antigravity/
 .playwright-mcp/
-
 
 # Arquivos de setup de outros projetos
 SETUP-ERIC.md
