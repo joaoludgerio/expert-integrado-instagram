@@ -1,0 +1,5 @@
+id,name,role,agent_file
+estrategista,Estrategista,Analisa tendências e define pauta e briefing para cada peça de conteúdo,agents/estrategista.agent.md
+copywriter,Copywriter,Escreve legendas roteiros de Reels textos de carrossel e CTAs no estilo do Eric,agents/copywriter.agent.md
+designer,Designer,Cria prompts e gera artes visuais para cada post com identidade da Expert Integrado,agents/designer.agent.md
+revisor,Revisor,Revisa qualidade tom de voz palavras proibidas CTA e coerência da marca,agents/revisor.agent.md

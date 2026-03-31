@@ -1,0 +1,86 @@
+name: conteudo-instagram
+title: "Expert Integrado — Conteúdo Instagram"
+description: >
+  Squad de produção de conteúdo para o Instagram da Expert Integrado.
+  Produz Reels, Carrosséis e Stories focados em aquisição B2B para
+  o Super SDR e consultoria em IA comercial. Eric Luciano é a face da marca.
+version: "1.0"
+performance_mode: alta-performance
+
+pipeline:
+  - step: 1
+    agent: estrategista
+    task: "análise de pauta"
+    description: >
+      Receber o tema/briefing do usuário e definir:
+      - Tema e ângulo único
+      - Formato recomendado (Reel / Carrossel / Story)
+      - Pilar de conteúdo (Vibe Coding / Tradução para negócios / Case / Social proof)
+      - Hook principal que para o scroll
+      - Público específico (gestor, dono de empresa, time comercial)
+      - CTA claro e específico
+      Entregar briefing estruturado para o copywriter.
+
+  - step: 2
+    type: checkpoint
+    description: "Aprovar briefing e direcionamento da pauta"
+    questions:
+      - "O briefing está alinhado com o que você quer comunicar?"
+
+  - step: 3
+    agent: copywriter
+    task: "criação de copy"
+    description: >
+      Com base no briefing aprovado, criar:
+      - Legenda completa com hook, corpo e CTA (formato Instagram)
+      - Textos dos slides (se carrossel, máx 7 slides)
+      - Roteiro com falas e cenas (se Reel)
+      - Sequência de Stories (se Story)
+      - Sugestão de 15-20 hashtags relevantes para B2B/IA/vendas
+    format: instagram-feed
+
+  - step: 4
+    type: checkpoint
+    description: "Aprovar copy antes de criar as artes"
+    questions:
+      - "A copy e o roteiro estão bons?"
+
+  - step: 5
+    agent: designer
+    task: "criação visual"
+    description: >
+      Criar prompts detalhados para geração de imagens com a identidade visual
+      da Expert Integrado (fundo escuro ou branco, azul/laranja, estilo profissional B2B).
+      Gerar as imagens usando a ferramenta de geração de imagem.
+      Para carrosséis: gerar cada slide individualmente.
+      Para Reels: gerar thumbnail e frame de abertura.
+
+  - step: 6
+    type: checkpoint
+    description: "Aprovar artes visuais antes da revisão final"
+    questions:
+      - "As artes estão boas?"
+
+  - step: 7
+    agent: revisor
+    task: "revisão final"
+    description: >
+      Revisar todo o pacote de conteúdo:
+      - Tom de voz alinhado com Eric Luciano (prático, sem hype, focado em resultado)
+      - Ausência de palavras proibidas (revolucionário, game-changer, transformador, disruptivo)
+      - CTA claro e específico presente
+      - Dados e números quando possível
+      - Hashtags relevantes (sem spam)
+      - Coerência visual com identidade Expert Integrado
+      - Erros de português
+      - Sugestão de melhor horário para postar
+      Gerar relatório final com score de qualidade (1-10) e sugestões.
+
+  - step: 8
+    type: checkpoint
+    description: "Aprovação final para publicação"
+    questions:
+      - "Conteúdo aprovado para publicar?"
+
+output_dir: "squads/conteudo-instagram/output"
+memory_dir: "squads/conteudo-instagram/_memory"

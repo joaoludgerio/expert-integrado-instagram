@@ -29,9 +29,6 @@ tasks/
 .antigravity/
 .playwright-mcp/
 
-# Outros squads
-squads/conteudo-instagram/
-squads/live-imposto-invisivel/
 
 # Arquivos de setup de outros projetos
 SETUP-ERIC.md
