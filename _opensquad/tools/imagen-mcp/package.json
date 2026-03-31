@@ -1,0 +1,12 @@
+{
+  "name": "imagen-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for Google Imagen 3 image generation",
+  "main": "server.js",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "google-auth-library": "^10.6.2",
+    "zod": "^3.22.0"
+  }
+}

@@ -1,0 +1,38 @@
+# Browser sessions (private per user)
+_opensquad/_browser_profile/
+
+# Pipeline state (regenerated each run)
+_opensquad/squads/*/state.json
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code local files
+.claude/
+
+# MCPs externos (não fazem parte do opensquad)
+dashboard/
+outlook-mcp/
+clickup-mcp-main/
+meta-ads-mcp/
+discordmcp/
+whatsappweb-mcp-main/
+kltv/
+temp_webmeeting/
+output/
+tasks/
+.antigravity/
+.playwright-mcp/
+
+# Outros squads
+squads/conteudo-instagram/
+squads/live-imposto-invisivel/
+
+# Arquivos de setup de outros projetos
+SETUP-ERIC.md
+*.py
