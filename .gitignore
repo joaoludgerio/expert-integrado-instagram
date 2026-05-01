@@ -34,3 +34,8 @@ tasks/
 # Arquivos de setup de outros projetos
 SETUP-ERIC.md
 *.py
+
+# Variáveis de ambiente / segredos
+.env
+.env.local
+.env.*.local
